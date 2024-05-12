@@ -1,0 +1,36 @@
+.header {
+    display: flex;
+    justify-content: center;
+    background: #232323;
+    color: white;
+    padding: 12px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.ul {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    flex-direction: row;
+    font-weight: bold;
+}
+
+.svgHeader {
+    height: 28px;
+    width: 28px;
+}
+
+.logoHeader {
+    height: 40px;
+    width: 40px;
+}
+
+.iconsHeader {
+    display: flex;
+    gap: 12px;
+}
