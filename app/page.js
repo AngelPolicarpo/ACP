@@ -8,7 +8,7 @@ export default function Home() {
   <Header />
   <main className={styles.main}>
     <section className={styles.section}>
-      
+      <video src={'video.mp4'} type="video/mp4" className={styles.video} autoPlay muted loop></video>
     </section>
     <section>
 
