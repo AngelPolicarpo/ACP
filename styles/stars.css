@@ -1,0 +1,53 @@
+.starProfile {
+    font-size: x-large;
+    width: 24px;
+    display: inline-block;
+    color: gray;
+}
+.starProfile:last-child {
+    margin-right: 0;
+}
+.starProfile:before {
+    content:'\2605';
+}
+.starProfile.on {
+    color: gold;
+}
+.starProfile.half:after {
+    content:'\2605';
+    color: gold;
+    position: absolute;
+    margin-left: -20px;
+    width: 10px;
+    overflow: hidden;
+}
+
+.star {
+    color: gold;
+    font-size: x-large;
+}
+
+.li {
+    flex-grow: 1;
+    width: 100%;
+    padding: 16px 24px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+}
+
+.li:hover {
+    color: #fff;
+    background-color: rgba(25, 25, 25, 0.6);
+}
+
+.li:last-of-type {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.guardar {
+    background-image: linear-gradient(45deg,#2e080d,#030202 41%,#161937 88%,#11122c);
+}
+

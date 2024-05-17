@@ -1,12 +1,8 @@
-main {
-    flex-grow: 1;
-}
-
 html,
 body 
 {
-  min-height: 100vh;
-  min-width: 280px;
+  min-height: 500px;
+  min-width: 645px;
   max-width: 100vw;
   display: flex;
   flex-flow: column nowrap;
@@ -14,4 +10,35 @@ body
   padding: 0;
   font-family: "Lato", sans-serif;
   scroll-behavior: smooth;
+  background-color: black;
+}
+
+::-webkit-scrollbar {
+  width: 16px; /* Largura da barra de rolagem vertical */
+  height: 16px; /* Altura da barra de rolagem horizontal */
+}
+
+/* Estilo para a área de fundo da barra de rolagem */
+::-webkit-scrollbar-track {
+  background: #232323; /* Cor de fundo da barra de rolagem */
+}
+
+/* Estilo para o polegar (a parte móvel) da barra de rolagem */
+::-webkit-scrollbar-thumb {
+  background: #ffffff4d; /* Gradiente de cor para o polegar */
+}
+
+/* Estilo para o polegar quando em hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff; /* Cor alterada para hover */
+}
+
+/* Estilo para o polegar quando ativo */
+::-webkit-scrollbar-thumb:active {
+  background: #ffffff; /* Cor alterada para ativo */
+}
+
+/* Estilo para a borda da barra de rolagem */
+::-webkit-scrollbar-corner {
+  background: #232323; /* Cor para a borda da barra de rolagem */
 }

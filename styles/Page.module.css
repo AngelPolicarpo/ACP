@@ -1,13 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+
 .main {
-    background: rgb(255, 255, 0);
-    color: black;
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
+  
+.section {
+    height: 100vh;
+    order: 1;
+}
+  
+.videoContainer {
+    position: relative; /* Define um contexto de posicionamento para o contêiner */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%; /* Defina a altura do contêiner para ocupar todo o espaço do vídeo */
+}
+  
+.titleContainer {
+    position: absolute; /* Define o posicionamento absoluto para o título */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%; 
+    top: 0;
+    bottom: 0;
+    text-align: center;
 }
 
+
+.title {
+    font-size: 24px;
+    margin: 0;
+    opacity: 1;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+}
+
+
+.subtitle {
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+}
+  
 .video {
-    min-width: 100%;
-    min-height: 100%;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: -1;
+    filter: brightness(30%) grayscale(60%) blur(4px);
+    transition: filter 1s ease;
+}
+
+.button {
+    background: none;
+    padding: 16px 24px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 20px;
+    font-family: '__Inter_aaf875', '__Inter_Fallback_aaf875';
+    font-weight: 200;
+    background-color: rgba(25, 25, 25, 0.6);
+    border: 1px solid white;
+    transition: color 0.6s ease, background-color 0.6s ease;
+}
+
+
+.button:hover {
+    color: white;
+    background-color: black;
+}
+
+.carouselContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 1440px) {
+    .title {
+        font-size: 64px;
+    }
+    .subtitle {
+        padding-bottom: 24px;
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 600px), (max-height: 550px) {
+    .carouselContainer {
+        flex-direction: column;
+    }
+}
+
+/*** SECTION REVIEWS ***/
+
+.titleReviewH1 {
+    text-align: center;
+    margin: 0;
+    font-size: 48px;
+    opacity: 0.9;
+}
+
+.titleDescriptionP {
+    margin: 0;
+    font-size: 24px;
+    opacity: 0.9;
+    text-align: center;
+    padding-bottom: 48px;
+}
+
+.imageReview {
+    height: 64px;
+    width: 64px;
+    border-radius: 4px;
+}
+
+.profileDetails {
+    padding: 12px;
+    color: #fff;
+}
+
+.profileName {
+    font-weight: bold;
+}
+
+.ratingText {
+    font-size: 12px;
+}
+
+.profileContainer {
+    gap: 4px;
+}
+
+.reviewSection {
+    padding: 48px;
+    background-color: rgba(255, 255, 255, 0.04);
+    order: 4;
+}
+
+.reviewButtonDiv {
+    padding-top: 12px;
+}
+
+.reviewButton {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 16px;
+    font-family: '__Inter_aaf875', '__Inter_Fallback_aaf875';
+    font-weight: 200;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid white;
+    padding: 4px 24px;
+}
+
+/*** SECTION PLANOS ***/
+
+.offersSection {
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 1%, rgb(20, 20, 20) 100%);
+    order: 2;
+    padding: 48px;
+}
+
+
+.offersArticle {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+}
+
+.offersTitleH1 {
+    margin: 0;
+    opacity: 0.9;
+    font-size: 48px;
+    text-align: center;
+}
+
+.offersDescriptionP {
+    font-size: 24px;
+    text-align: center;
+    opacity: 0.9;
+    margin: 0;
+    padding-bottom: 48px;
+}
+
+.offersContainer {
+    max-width: 400px;
+    background-color: rgba(255, 255, 255, 0.04);
+    border-radius: 4px;
+    padding: 24px;
+
+}
+
+.checkedSvg {
+    width: 16px;
+    height: 16px;
+}
+
+.offersUl {
+    list-style: none;
+    padding: 0;
+}
+
+.offersLi {
+    padding-bottom: 12px;
+}
+
+.offersLi:last-of-type {
+    padding-bottom: 0px;
+}
+
+.offersTextDiv {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.offersPriceDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.offersPriceStrong {
+    font-size: 24px;
+}
+
+.offersPriceP {
+    font-size: 12px;
+    margin: 0;
+    padding-top: 4px;
+}
+
+.titleOffersH2 {
+    font-weight: normal;
+    margin: 0;
+}
+
+.descriptionOffersP {
+    margin: 0;
+    opacity: 0.5;
+}
+
+.offersButton {
+    background: none;
+    padding: 16px 24px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 20px;
+    font-family: '__Inter_aaf875', '__Inter_Fallback_aaf875';
+    font-weight: 200;
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid white;
+    margin-top: 12px;
+    transition: color 0.6s ease, background-color 0.6s ease;  
+    width: 100%;  
+}
+
+/*** SECTION ??? ***/
+
+.aboutSection {
+    order: 3;
+    position: relative;
+    overflow: hidden;
+    padding-top: 64px;
+    min-height: 50vh;
+    padding-bottom: 28px;
+    box-shadow: 0px 0px 12px 12px rgb(20, 20, 20) inset;
+    display: flex;
+  }
+  
+  .aboutSection::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/happy.webp");
+    background-size: cover;
+    background-position: center;
+    filter: blur(4px) brightness(30%) grayscale(100%); /* Ajuste o valor do blur conforme necessário */
+    z-index: 1; /* Coloca a imagem atrás do texto */
+  }
+  
+  .aboutSection div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: relative; /* Necessário para que o texto fique acima do ::before */
+    z-index: 2;
+  }
+  
+  .aboutSection p {
+    margin: 0;
+    font-size: 24px;
+    opacity: 0.9;
+    padding: 36px;
+    line-height: 28px;
+  }
+  
+  .aboutSection h1 {
+    margin: 0;
+    font-size: 48px;
+    opacity: 0.9;
+  }
+
+/*** SECTION INSTALLATIONS ***/
+
+.installationsSection {
+    order: 3;
+    background-color: rgba(255, 255, 255, 0.04);
+}
+ 
+.installationsSection h1 {
+    font-size: 48px;
+    text-align: center;
+    margin: 0;
+    padding: 24px;
+    opacity: 0.9;
 }

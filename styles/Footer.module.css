@@ -1,5 +1,17 @@
 .footer {
     display: flex;
     color: white;
-    background: #232323;
+    height: 99000px;
+    background: black;
+}
+
+.iconsHeader {
+    display: flex;
+    gap: 12px;
+    display: none;
+}
+
+.svgHeader {
+    height: 28px;
+    width: 28px;
 }
