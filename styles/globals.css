@@ -13,32 +13,30 @@ body
   background-color: black;
 }
 
+/* Custom Scrollbar Styles */
 ::-webkit-scrollbar {
-  width: 16px; /* Largura da barra de rolagem vertical */
-  height: 16px; /* Altura da barra de rolagem horizontal */
+  width: 12px; /* Largura da barra de rolagem */
+  height: 12px; /* Altura da barra de rolagem (para rolagem horizontal) */
 }
 
-/* Estilo para a área de fundo da barra de rolagem */
 ::-webkit-scrollbar-track {
-  background: #232323; /* Cor de fundo da barra de rolagem */
+  background: #f1f1f1; /* Cor do track da barra de rolagem */
 }
 
-/* Estilo para o polegar (a parte móvel) da barra de rolagem */
 ::-webkit-scrollbar-thumb {
-  background: #ffffff4d; /* Gradiente de cor para o polegar */
+  background-color: #888; /* Cor do thumb (indicador) da barra de rolagem */ /* Bordas arredondadas do thumb */
+  border: 3px solid #f1f1f1; /* Espessura e cor do contorno ao redor do thumb */
 }
 
-/* Estilo para o polegar quando em hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #ffffff; /* Cor alterada para hover */
+  background-color: #555; /* Cor do thumb ao passar o mouse */
 }
 
-/* Estilo para o polegar quando ativo */
 ::-webkit-scrollbar-thumb:active {
-  background: #ffffff; /* Cor alterada para ativo */
+  background-color: #333; /* Cor do thumb ao clicar */
 }
 
-/* Estilo para a borda da barra de rolagem */
 ::-webkit-scrollbar-corner {
-  background: #232323; /* Cor para a borda da barra de rolagem */
+  background: #f1f1f1; /* Cor do canto da barra de rolagem */
 }
+

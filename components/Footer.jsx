@@ -1,88 +1,51 @@
 'use client';
 import styles from "../styles/Footer.module.css";
+import Link from "next/link";
 
-export default function Footer(){
-    return (
-        <footer className={styles.footer}>
-            <div className={styles.iconsHeader}>
-                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg" className={styles.svgHeader}
-                    width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000"
-                    preserveAspectRatio="xMidYMid meet"><g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-                    fill="#FFFF00" stroke="none">
-                    <path d="M2321 5110 c-1340 -130 -2361 -1283 -2318 -2620 13 -389 97 -726 268
-                    -1069 249 -502 647 -900 1150 -1150 815 -406 1779 -350 2539 147 297 194 579
-                    482 771 788 74 116 184 342 234 478 51 138 110 376 131 531 23 157 26 521 6
-                    660 -59 415 -191 769 -410 1099 -92 140 -185 254 -315 385 -399 403 -895 653
-                    -1462 737 -122 18 -466 26 -594 14z m850 -1289 c23 -18 24 -25 27 -173 4 -172
-                    -5 -225 -41 -232 -12 -3 -82 -7 -156 -10 -156 -6 -205 -23 -243 -84 -22 -35
-                    -23 -49 -26 -239 l-3 -203 211 0 c125 0 219 -4 230 -10 40 -22 42 -42 20 -228
-                    -24 -210 -26 -216 -46 -236 -13 -14 -47 -16 -215 -16 l-199 0 0 -537 c0 -485
-                    -2 -538 -17 -555 -15 -16 -35 -18 -223 -18 -147 0 -209 3 -218 12 -9 9 -12
-                    146 -12 555 l0 543 -159 0 c-154 0 -160 1 -175 22 -13 19 -16 57 -16 221 0
-                    197 0 198 25 222 23 24 28 25 174 25 l149 0 4 253 c4 229 6 259 27 322 49 150
-                    138 258 265 320 102 51 180 63 402 64 175 1 194 -1 215 -18z"/>
-                    </g>
-                    </svg>
-                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg" className={styles.svgHeader}
-                    width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000"
-                    preserveAspectRatio="xMidYMid meet">
 
-                    <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-                    fill="#FFFF00" stroke="none">
-                    <path d="M2321 5110 c-868 -84 -1644 -610 -2037 -1382 -139 -273 -221 -536
-                    -266 -853 -20 -140 -17 -504 6 -660 39 -278 121 -541 247 -794 249 -502 647
-                    -900 1150 -1150 815 -406 1779 -350 2539 147 297 194 579 482 771 788 74 116
-                    184 342 234 478 51 138 110 376 131 531 23 157 26 521 6 660 -59 415 -191 769
-                    -410 1099 -92 140 -185 254 -315 385 -399 403 -895 653 -1462 737 -122 18
-                    -466 26 -594 14z m950 -1293 c279 -84 479 -290 550 -567 21 -81 21 -1299 0
-                    -1380 -73 -285 -286 -498 -571 -571 -81 -21 -1299 -21 -1380 0 -279 72 -488
-                    276 -568 555 -15 55 -17 123 -17 706 0 705 -1 685 60 825 95 213 309 391 525
-                    434 30 6 64 13 75 15 11 2 301 3 645 2 554 -2 631 -4 681 -19z"/>
-                    <path d="M1913 3565 c-86 -24 -154 -64 -224 -134 -72 -72 -111 -138 -134 -228
-                    -23 -86 -22 -1201 0 -1288 24 -91 71 -169 142 -235 71 -67 134 -103 220 -125
-                    86 -23 1201 -22 1288 0 91 24 169 71 235 142 67 71 103 134 125 220 22 85 22
-                    1201 0 1286 -22 86 -58 149 -125 220 -66 71 -144 118 -235 142 -84 21 -1212
-                    21 -1292 0z m1352 -186 c55 -14 111 -72 121 -124 15 -81 -47 -177 -122 -191
-                    -83 -15 -154 20 -186 94 -39 87 4 184 97 217 49 17 38 17 90 4z m-561 -174
-                    c184 -39 361 -177 444 -346 56 -114 75 -206 69 -334 -8 -174 -68 -305 -197
-                    -435 -124 -125 -282 -190 -461 -190 -180 0 -332 64 -464 195 -131 131 -195
-                    283 -195 465 0 182 64 334 195 465 164 164 381 228 609 180z"/>
-                    <path d="M2417 2936 c-115 -48 -174 -104 -225 -213 -24 -52 -27 -70 -27 -163
-                    0 -97 2 -110 32 -172 40 -84 107 -151 193 -192 60 -29 73 -31 170 -31 97 0
-                    110 2 172 32 85 40 151 106 191 191 30 62 32 75 32 172 0 97 -2 110 -32 172
-                    -40 85 -106 151 -191 191 -58 28 -79 32 -162 35 -82 2 -103 -1 -153 -22z"/>
-                    </g>
-                    </svg>
-                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg" className={styles.svgHeader}
-                    width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000"
-                    preserveAspectRatio="xMidYMid meet">
 
-                    <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-                    fill="#FFFF00" stroke="none">
-                    <path d="M2321 5110 c-1340 -130 -2361 -1283 -2318 -2620 13 -389 97 -726 268
-                    -1069 249 -502 647 -900 1150 -1150 815 -406 1779 -350 2539 147 297 194 579
-                    482 771 788 74 116 184 342 234 478 51 138 110 376 131 531 23 157 26 521 6
-                    660 -59 415 -191 769 -410 1099 -92 140 -185 254 -315 385 -399 403 -895 653
-                    -1462 737 -122 18 -466 26 -594 14z m509 -1299 c437 -101 781 -405 928 -821
-                    53 -152 67 -237 66 -420 0 -141 -4 -181 -26 -276 -117 -501 -500 -871 -1006
-                    -971 -59 -11 -136 -17 -237 -17 -179 0 -302 23 -462 86 l-102 41 -323 -77
-                    c-178 -42 -329 -76 -335 -76 -7 0 -19 10 -27 23 -13 20 -8 53 54 354 l69 332
-                    -40 97 c-67 160 -93 290 -93 479 -1 229 34 378 135 581 169 339 503 594 874
-                    667 125 25 131 26 290 22 102 -3 177 -10 235 -24z"/>
-                    <path d="M2383 3546 c-324 -62 -611 -290 -733 -583 -61 -147 -74 -212 -74
-                    -393 -1 -196 15 -272 94 -437 l48 -101 -39 -188 c-22 -104 -38 -193 -37 -199
-                    2 -7 70 4 195 34 l192 44 98 -46 c161 -75 239 -92 433 -92 141 0 177 4 250 23
-                    291 79 523 274 652 548 67 145 82 215 82 409 1 148 -2 181 -22 255 -97 353
-                    -363 616 -720 712 -99 26 -316 33 -419 14z m-194 -382 c23 -17 65 -99 122
-                    -241 33 -82 31 -93 -25 -168 -50 -65 -49 -102 5 -172 99 -127 356 -333 416
-                    -333 34 0 60 16 120 71 28 27 60 49 70 49 10 0 81 -18 158 -40 108 -31 145
-                    -45 163 -65 35 -41 29 -83 -21 -152 -91 -123 -157 -158 -302 -158 -119 0 -207
-                    24 -332 90 -117 62 -203 126 -322 240 -215 206 -321 400 -321 585 0 102 61
-                    212 154 281 45 33 81 37 115 13z"/>
-                    </g>
-                    </svg>
-                </div>
-            <div className={styles.container}>.</div>
-        </footer>
-    )
+export default function Footer() {
+  return (
+    <footer className={styles.footer}>
+      <div className={styles.topSection}>
+        <div className={styles.linksContainer}>
+          <span>EMPRESA</span>
+          <div>          <Link href="/company">SOBRE A EMPRESA</Link>
+          <Link href="/privacy">CENTRAL DE PRIVACIDADE</Link>
+          <Link href="/careers">TRABALHE CONOSCO</Link>
+          <Link href="/franchise">SEJA UM FRANQUEADO</Link></div>
+
+        </div>
+        <div className={styles.appsContainer}>
+          <span>FACILITE OS TREINOS COM NOSSO APLICATIVO</span>
+          <div className={styles.appLinks}>
+            <a href="https://play.google.com" target="_blank" rel="noopener noreferrer">
+              <img src="images/playstore.svg" alt="Google Play" className={styles.appBadge} />
+            </a>
+            <a href="https://apps.apple.com" target="_blank" rel="noopener noreferrer">
+              <img src="images/apple.svg" alt="App Store" className={styles.appBadge} />
+            </a>
+          </div>
+        </div>
+        <div className={styles.socialMedia}>
+          <span>SIGA NOSSAS REDES SOCIAIS</span>
+          <div className={styles.socialIcons}>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+              <img src="images/instagram.svg" alt="Instagram" />
+            </a>
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+              <img src="images/facebook.svg" alt="Facebook" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className={styles.bottomSection}>
+        <div className={styles.companyInfo}>
+          <p>
+          © 2023 Academia Corpo Perfeito. Todos os direitos reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
 }

@@ -1,17 +1,70 @@
 .footer {
-    display: flex;
+    text-align: center;
     color: white;
-    height: 99000px;
-    background: black;
-}
+  }
 
-.iconsHeader {
+  .footer span {
+    font-weight: bold;
+  }
+  
+  .topSection {
     display: flex;
-    gap: 12px;
-    display: none;
-}
+    padding: 48px 0px;
+    justify-content: space-evenly;
+    gap: 48px;
+    background-color: rgba(255, 255, 255, 0.04);
+  }
+  
+  .linksContainer {
+    display: flex;
+    flex-direction: column;
+  }
 
-.svgHeader {
-    height: 28px;
-    width: 28px;
-}
+  .linksContainer div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 16px;
+  }
+
+  .linksContainer a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .appLinks {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+  }
+  
+  .appBadge {
+    width: 150px;
+    margin: 0 10px;
+  }
+  
+  .socialIcons {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    gap: 8px;
+  }
+  
+  .socialIcons img {
+    width: 36px;
+    height: 36  px;
+  }
+
+  .bottomSection {
+    background-color: black);
+    color: #fff;
+    padding: 10px 0;
+    
+  }
+  
+  .companyInfo {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  

@@ -7,7 +7,7 @@
     color: white;
   }
   
-.firstSection {
+.section {
     height: 100vh;
     order: 1;
 }
@@ -93,12 +93,6 @@
 
 /*** SECTION REVIEWS ***/
 
-.reviewsSection {
-    padding: 48px;
-    background-color: rgba(255, 255, 255, 0.04);
-    order: 4;
-}
-
 .reviewsSection h1 {
     text-align: center;
     margin: 0;
@@ -127,18 +121,11 @@
     background-color: rgba(255, 255, 255, 0.04);
 }
 
-.reviewsSection > div > div:nth-child(1) > div:nth-child(1) {
+.textOfEmprise {
     display: flex;
 }
 
-.reviewsSection > div > div:nth-child(1) > div:nth-child(1) img {
-    height: 40px;
-    width: 40px;
-    margin-right: 16px;
-    border-radius: 36px;
-}
-
-.reviewsSection > div > div:nth-child(1) > div:nth-child(1) > div {
+.textemprise {
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -148,30 +135,46 @@
     color: #fff;
 }
 
-.reviewsSection > div > div:nth-child(1) > div:nth-child(1) > div > div:nth-child(1) {
-    font-weight: bold;
-}
-
-
-.reviewsSection > div > div:nth-child(1) > div:nth-child(1) > div > div:nth-child(2) {
+.dateFundation {
     opacity: 0.5;
     font-size: 12px;
 }
 
-.reviewsSection > div > div:nth-child(1) > div:nth-child(2) {
-    margin-top: 4px;
+.imageReview {
+    height: 40px;
+    width: 40px;
+    margin-right: 16px;
+    border-radius: 36px;
 }
 
-.reviewsSection > div > div:nth-child(1) > div:nth-child(3) {
+.profileName {
+    font-weight: bold;
+}
+
+.ratingText {
     font-size: 12px;
 }
 
-.reviewsSection > div > div:nth-child(1) > div:nth-child(4) {
+.profileContainer {
+    width: 64px;
+    height: 64px;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.04);
+}
+
+.reviewsSection {
+    padding: 48px;
+    background-color: rgba(255, 255, 255, 0.04);
+    order: 4;
+}
+
+.reviewButtonDiv {
     padding-top: 12px;
     display: flex;
 }
 
-.reviewsSection > div > div:nth-child(1) > div:nth-child(4) a {
+.reviewButton {
     cursor: pointer;
     color: black;
     font-size: 12px;
@@ -293,33 +296,22 @@
 
 .aboutSection {
     order: 3;
-}
+  }
   
 .aboutImg {
-    position: relative; 
-    z-index: 0; 
+    background-image: url('https://www.bodytech.com.br/assets/home/gym_main.jpg');
+    z-index: 990;
+    background-color: #424850;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    min-height: 50vh;
     display: flex;
     justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-.aboutImg::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(255,255, 255, .04),rgba(255,255,255,.08)),transparent url(/happy.webp) no-repeat center/cover;
-    background-size: cover;
-    background-position: center;
-    background-position-y: 33%;
-    filter: brightness(50%) grayscale(50%) blur(1px); 
-    z-index: -1; 
+    align-items: center;    
 }
   
-.aboutContainer {
+  .aboutContainer {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -333,13 +325,11 @@
     margin: 0;
     font-size: 24px;
     padding-top: 48px;
-    text-shadow: 1px 1px 5px black;
   }
   
   .aboutSection h1 {
     margin: 0;
     font-size: 48px;
-    text-shadow: 1px 1px 5px black;
   }
 
 /*** SECTION INSTALLATIONS ***/
@@ -349,29 +339,16 @@
 }
 
 .helpImg {
-    position: relative; 
-    z-index: 0; 
+    background-image: url('https://www.bodytech.com.br/assets/home/gym_faq.jpg');
+    z-index: 990;
+    background-color: #424850;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    min-height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 50vh;
-    overflow: hidden;
-}
-
-
-.helpImg:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(255,255, 255, .04),rgba(255,255,255,.08)),transparent url(/gym.webp) no-repeat center/cover;
-    background-size: cover;
-    background-position: center;
-    background-position-y: 33%;
-    filter: brightness(50%) grayscale(50%) blur(1px); 
-    z-index: -1; 
 }
 
 .helpContainer {
@@ -390,7 +367,6 @@
     font-size: 48px;
     opacity: 0.9;
     padding-bottom: 48px;
-    text-shadow: 1px 1px 5px black;
 }
 
 .helpButtonsContainer {
